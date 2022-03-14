@@ -411,6 +411,8 @@ async def on_message_create(event: dis.events.MessageCreate):
     if not config.auto_embed:
         return
 
+    await event.message.channel.trigger_typing()
+
     if link.type == VideoIdType.SHORT:
         video_id = await get_video_id(link.url)
     else:
