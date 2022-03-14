@@ -84,6 +84,12 @@ async def help(ctx: dis.InteractionContext):
                         "If enabled, the origin embed will be removed."
                     ),
                 ).to_dict(),
+                dis.EmbedField(
+                    "Language",
+                    _[config.language].gettext(
+                        "Set the language of the bot."
+                    ),
+                ).to_dict(),
             ],
         ),
         dis.Embed(
@@ -110,12 +116,14 @@ async def help(ctx: dis.InteractionContext):
         ),
     ]
 
-    paginator = Paginator.create_from_embeds(bot, *embeds, timeout=20)
+    paginator = Paginator.create_from_embeds(bot, *embeds, timeout=30)
     paginator.default_button_color = dis.ButtonStyles.GRAY
-    paginator.first_button_emoji = "<:first_arrow:948778200224370768>"
-    paginator.last_button_emoji = "<:last_arrow:948778201264582806>"
-    paginator.next_button_emoji = "<:next:948778200295673886>"
-    paginator.back_button_emoji = "<:back:948778200257941576>"
+    paginator.first_button_emoji = "<:tiktoker_first_arrow:951169872849670244>"
+    paginator.last_button_emoji = "<:tiktoker_last_arrow:951169872841277461>"
+    paginator.next_button_emoji = "<:tiktoker_next_arrow:951169872749019226>"
+    paginator.back_button_emoji = "<:tiktoker_back_arrow:951169873306853436>"
+    paginator.show_select_menu = True
+    paginator.wrong_user_message = _[config.language].gettext("This menu is not for you")
 
     await paginator.send(ctx)
 

@@ -2,6 +2,9 @@ import gettext
 from os import walk, system, getcwd
 import re
 
+# python .\utils\pygettext.py -d bot -o .\locale\en\LC_MESSAGES\bot.po .\bot.py
+# example how to make po file
+
 regex = r"Language-Team: (.*)"
 languages = [dir for dir in walk("./locale")][0][1]
 language_names = {}
