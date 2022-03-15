@@ -1,25 +1,23 @@
+import logging
 import re
+import subprocess
+from base64 import urlsafe_b64encode
+from collections import Counter
+from datetime import datetime, timedelta
+from os import urandom
 from typing import Optional
 
 import aiohttp
 import dis_snek as dis
+import motor
+import pymongo.errors as pymongo_errors
+from beanie import init_beanie
 from dis_snek.ext.paginators import Paginator
 from dotenv import get_key
 
+from database import Config, OptedOut, Shortener, UsageData
 from models import *
 from tiktok import get_tiktok
-
-import motor
-from beanie import init_beanie
-
-from database import Config, UsageData, Shortener, OptedOut
-
-from base64 import urlsafe_b64encode
-from os import urandom
-
-import logging
-
-
 from utils.translate import initilized_langs as _
 from utils.translate import language_names as lang_names
 
@@ -86,9 +84,7 @@ async def help(ctx: dis.InteractionContext):
                 ).to_dict(),
                 dis.EmbedField(
                     "Language",
-                    _[config.language].gettext(
-                        "Set the language of the bot."
-                    ),
+                    _[config.language].gettext("Set the language of the bot."),
                 ).to_dict(),
             ],
         ),
@@ -112,6 +108,12 @@ async def help(ctx: dis.InteractionContext):
                         "A slash command that takes a TikTok link and returns the video. Useful for when _Auto Embed_ is disabled in your server's configuration."
                     ),
                 ).to_dict(),
+                dis.EmbedField(
+                    "/info",
+                    _[config.language].gettext(
+                        "Provides some general information and statistics about TikToker."
+                    ),
+                ).to_dict(),
             ],
         ),
     ]
@@ -123,7 +125,9 @@ async def help(ctx: dis.InteractionContext):
     paginator.next_button_emoji = "<:tiktoker_next_arrow:951169872749019226>"
     paginator.back_button_emoji = "<:tiktoker_back_arrow:951169873306853436>"
     paginator.show_select_menu = True
-    paginator.wrong_user_message = _[config.language].gettext("This menu is not for you")
+    paginator.wrong_user_message = _[config.language].gettext(
+        "This menu is not for you"
+    )
 
     await paginator.send(ctx)
 
@@ -603,6 +607,102 @@ async def on_button_click(event: dis.events.Button):
         )
 
 
+@dis.slash_command(
+    "info", "Here is some general information and statistics about TikToker."
+)
+@dis.cooldown(dis.Buckets.GUILD, 1, 10)
+async def info(ctx: dis.Context):
+    config = await get_guild_config(ctx.guild.id)
+    await ctx.defer()
+
+    usage_data = await get_all_usage_data()
+
+    unique_users = len(set([x.user_id for x in usage_data if x.user_id]))
+    total_converted_today = len(
+        [
+            x
+            for x in usage_data
+            if x.timestamp > (datetime.now() - timedelta(days=1)).timestamp()
+        ]
+    )
+
+    most_popular_video_id = Counter([x.video_id for x in usage_data]).most_common(1)[0][
+        0
+    ]
+    commit = (
+        subprocess.check_output(["git", "rev-parse", "--short", "HEAD"])
+        .decode("utf-8")
+        .strip()
+    )
+    repo_url = (
+        subprocess.check_output(["git", "config", "--get", "remote.origin.url"])
+        .decode("utf-8")
+        .strip()[:-4]
+        + f"/tree/{commit}"
+    )
+    pop_tok = await get_tiktok(
+        most_popular_video_id
+    )  # NOTE: pop_tok is short for most_popular_tiktok (lol)
+
+    embed = dis.Embed(
+        _[config.language].gettext("TikToker Info"),
+        description=_[config.language].gettext(
+            "Here is some general information and statistics about TikToker."
+        ),
+        color="#00FFF0",
+    )
+    embed.add_field(
+        name=_[config.language].gettext("TikToks Converted %s") % "📷",
+        value=len(usage_data),
+        inline=True,
+    )
+    embed.add_field(
+        name=_[config.language].gettext("Converted Today %s") % "🕒",
+        value=total_converted_today,
+        inline=True,
+    )
+    embed.add_field(
+        name=_[config.language].gettext("Most Popular TikTok %s") % "",
+        value=f"[{pop_tok.author.nickname} - {pop_tok.description.cleaned}]({pop_tok.share_url} '{pop_tok.share_url}')",
+        inline=True,
+    )
+    embed.add_field(
+        name=_[config.language].gettext("Server Count %s") % "📡",
+        value=len(ctx.bot.guilds),
+        inline=True,
+    )
+    embed.add_field(
+        name=_[config.language].gettext("User Count %s") % "👤",
+        value=unique_users,
+        inline=True,
+    )
+    embed.add_field(
+        name=_[config.language].gettext("Ping %s") % "🏓",
+        value=f"{ctx.bot.latency * 1000:.0f}ms",
+        inline=True,
+    )
+    embed.add_field(
+        name=_[config.language].gettext("Commit Version %s") % "🔗",
+        value=f"[{commit}]({repo_url})",
+        inline=True,
+    )
+
+    await ctx.send(embed=embed)
+
+
+@info.error
+async def info_command_error(error, ctx: dis.InteractionContext):
+    config = await get_guild_config(ctx.guild.id)
+    if isinstance(error, dis.errors.CommandOnCooldown):
+        await ctx.send(
+            _[config.language].gettext(
+                "This command is on cooldown. Try again in %s seconds."
+            )
+            % round(error.cooldown.get_cooldown_time()),
+            ephemeral=True,
+        )
+
+
 async def create_short_url(video_uri: str) -> str:
     """
     Shortens a url if not in cache.
@@ -627,7 +727,12 @@ async def create_short_url(video_uri: str) -> str:
         slug=slug,
         shortened_url=f"https://m.tiktoker.win/{slug}",
     )
-    await shortener.insert()
+    try:
+        await shortener.insert()
+    except pymongo_errors.DuplicateKeyError:
+        # NOTE: This can be triggered when someone spams the link
+        #       so we just ignore it and return the existing url.
+        ...
     return shortener.shortened_url
 
 
@@ -800,6 +905,42 @@ async def insert_usage_data(
     await UsageData(
         guild_id=guild_id, user_id=user_id, video_id=video_id, message_id=message_id
     ).insert()
+
+
+async def get_guild_usage_data(guild_id: int) -> List["UsageData"]:
+    """
+    Gets the guild usage data.
+
+    args:
+        guild_id: The guild id.
+
+    returns:
+        The guild usage data.
+    """
+    return await UsageData.find_many({"guild_id": guild_id}).to_list()
+
+
+async def get_user_usage_data(user_id: int) -> List["UsageData"]:
+    """
+    Gets the user usage data.
+
+    args:
+        user_id: The user id.
+
+    returns:
+        The user usage data.
+    """
+    return await UsageData.find_many({"user_id": user_id}).to_list()
+
+
+async def get_all_usage_data() -> List["UsageData"]:
+    """
+    Gets all usage data.
+
+    returns:
+        The all usage data.
+    """
+    return await UsageData.find_many({}).to_list()
 
 
 async def add_opted_out(user_id: int) -> None:
