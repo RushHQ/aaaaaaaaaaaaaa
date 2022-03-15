@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tiktoker\n"
 "POT-Creation-Date: 2022-03-14 23:00-0400\n"
-"PO-Revision-Date: 2022-03-15 03:05\n"
+"PO-Revision-Date: 2022-03-15 05:27\n"
 "Last-Translator: \n"
 "Language-Team: Vietnamese\n"
 "MIME-Version: 1.0\n"
@@ -47,19 +47,19 @@ msgstr "Bạn có thể xem cấu hình server của bạn bằng `/config`.\n"
 
 #: .\bot.py:69
 msgid "If enabled, the bot will automatically embed the Tiktok links."
-msgstr ""
+msgstr "Khi đã được bật, bot sẽ tự động đính kém vào link Tiktok."
 
 #: .\bot.py:75
 msgid "If enabled and _Auto Embed_ is enabled, the bot will delete the origin message containing the TikTok link."
-msgstr ""
+msgstr "Khi được kích hoạt và _Auto Embed_ đã được bật, bot sẽ tự động xóa tin nhắn đã gửi link TikTok."
 
 #: .\bot.py:81
 msgid "If enabled, the origin embed will be removed."
-msgstr ""
+msgstr "Khi đã được kích hoạt, mã nhúng đính kèm tin nhắn gốc sẽ bị xóa."
 
 #: .\bot.py:87
 msgid "Set the language of the bot."
-msgstr ""
+msgstr "Thiết lập ngôn ngữ của giao diện."
 
 #: .\bot.py:92
 msgid "Commands"
@@ -75,15 +75,15 @@ msgstr "Để sử dụng, nhấp chuột phải vào tin nhắn và chọn `Ứ
 
 #: .\bot.py:107
 msgid "A slash command that takes a TikTok link and returns the video. Useful for when _Auto Embed_ is disabled in your server's configuration."
-msgstr ""
+msgstr "Một lệnh gạch sẽ nhận một link Tiktok và trả về một video. Hữu dụng khi _Auto Embeded_ bị tắt trong cài đặt server của bạn."
 
 #: .\bot.py:113
 msgid "Provides some general information and statistics about TikToker."
-msgstr ""
+msgstr "Cung cấp một vài thông tin cơ bản và dữ liệu về TikToker."
 
 #: .\bot.py:128
 msgid "This menu is not for you"
-msgstr ""
+msgstr "Menu này không dành cho bạn"
 
 #: .\bot.py:168
 msgid "Opted-out"
@@ -127,11 +127,11 @@ msgstr "Không có đường liên kết TikTok nào trong tin nhắn."
 
 #: .\bot.py:347 .\bot.py:396 .\bot.py:446
 msgid "This video may be too long/big for Discord to embed. Just visit the link above."
-msgstr ""
+msgstr "Video này quá dài hoặc quá lớn để đính vào. Hãy vào link bên trên."
 
 #: .\bot.py:350
 msgid "%s | [Origin](%s) %s"
-msgstr ""
+msgstr "%s | [Gốc](%s) %s"
 
 #: .\bot.py:366
 msgid "That doesn't seem to be a valid TikTok link."
@@ -139,7 +139,7 @@ msgstr "Có vẻ như đường liên kết TikTok đó không có hiệu lực.
 
 #: .\bot.py:451
 msgid "%s | From: %s %s"
-msgstr ""
+msgstr "%s | Từ: %s %s"
 
 #: .\bot.py:497
 msgid "You don't have the permissions to delete this message."
@@ -191,41 +191,41 @@ msgstr "Số lượng video %s"
 
 #: .\bot.py:648
 msgid "TikToker Info"
-msgstr ""
+msgstr "Thông tin về TikToker"
 
 #: .\bot.py:649
 msgid "Here is some general information and statistics about TikToker."
-msgstr ""
+msgstr "Đây là một vào thông tin cơ bản và dữ liệu về Tiktoker."
 
 #: .\bot.py:655
 msgid "TikToks Converted %s"
-msgstr ""
+msgstr "Số TikTok đã được chuyển đổi %s"
 
 #: .\bot.py:660
 msgid "Converted Today %s"
-msgstr ""
+msgstr "Đã chuyển đổi hôm nay %s"
 
 #: .\bot.py:665
 msgid "Most Popular TikTok %s"
-msgstr ""
+msgstr "Video nổi tiếng nhất %s"
 
 #: .\bot.py:670
 msgid "Server Count %s"
-msgstr ""
+msgstr "Số lượng server %s"
 
 #: .\bot.py:675
 msgid "User Count %s"
-msgstr ""
+msgstr "Số người dùng %s"
 
 #: .\bot.py:680
 msgid "Ping %s"
-msgstr ""
+msgstr "Ping %s"
 
 #: .\bot.py:685
 msgid "Commit Version %s"
-msgstr ""
+msgstr "Phiên bản %s"
 
 #: .\bot.py:698
 msgid "This command is on cooldown. Try again in %s seconds."
-msgstr ""
+msgstr "Lệnh này đang trong thời gian hồi. Hãy thử lại sau %s giây."
 

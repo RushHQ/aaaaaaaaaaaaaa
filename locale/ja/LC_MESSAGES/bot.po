@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tiktoker\n"
 "POT-Creation-Date: 2022-03-14 23:00-0400\n"
-"PO-Revision-Date: 2022-03-15 03:05\n"
+"PO-Revision-Date: 2022-03-15 03:28\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -59,7 +59,7 @@ msgstr "有効にすると、元の埋め込みは削除されます。"
 
 #: .\bot.py:87
 msgid "Set the language of the bot."
-msgstr ""
+msgstr "ボットの言語を設定してください。"
 
 #: .\bot.py:92
 msgid "Commands"
@@ -79,11 +79,11 @@ msgstr "TikTokのリンクを取得し、TikTok動画を返すスラッシュコ
 
 #: .\bot.py:113
 msgid "Provides some general information and statistics about TikToker."
-msgstr ""
+msgstr "TikTokerに関する一般的な情報と統計情報を提供します。"
 
 #: .\bot.py:128
 msgid "This menu is not for you"
-msgstr ""
+msgstr "このメニューはあなたのためのものではありません。"
 
 #: .\bot.py:168
 msgid "Opted-out"
@@ -127,11 +127,11 @@ msgstr "そのメッセージにはTIkTokのリンクが含まれていません
 
 #: .\bot.py:347 .\bot.py:396 .\bot.py:446
 msgid "This video may be too long/big for Discord to embed. Just visit the link above."
-msgstr ""
+msgstr "このビデオはDiscordに埋め込むには長すぎる／大きすぎる可能性があります。上記のリンクをご覧ください。"
 
 #: .\bot.py:350
 msgid "%s | [Origin](%s) %s"
-msgstr ""
+msgstr "%s | [Origin](%s) %s"
 
 #: .\bot.py:366
 msgid "That doesn't seem to be a valid TikTok link."
@@ -139,7 +139,7 @@ msgstr "有効なTikTokのリンクではありません。"
 
 #: .\bot.py:451
 msgid "%s | From: %s %s"
-msgstr ""
+msgstr "%s | 送信者: %s %s"
 
 #: .\bot.py:497
 msgid "You don't have the permissions to delete this message."
@@ -191,41 +191,41 @@ msgstr "動画数: %s"
 
 #: .\bot.py:648
 msgid "TikToker Info"
-msgstr ""
+msgstr "TikToker情報"
 
 #: .\bot.py:649
 msgid "Here is some general information and statistics about TikToker."
-msgstr ""
+msgstr "こちらがTikTokerに関する一般的な情報と統計情報です。"
 
 #: .\bot.py:655
 msgid "TikToks Converted %s"
-msgstr ""
+msgstr "変換されたTikTok動画 %s"
 
 #: .\bot.py:660
 msgid "Converted Today %s"
-msgstr ""
+msgstr "今日変換されたTikTok動画 %s"
 
 #: .\bot.py:665
 msgid "Most Popular TikTok %s"
-msgstr ""
+msgstr "最も人気のあるTikTok動画 %s"
 
 #: .\bot.py:670
 msgid "Server Count %s"
-msgstr ""
+msgstr "サーバー数 %s"
 
 #: .\bot.py:675
 msgid "User Count %s"
-msgstr ""
+msgstr "ユーザー数 %s"
 
 #: .\bot.py:680
 msgid "Ping %s"
-msgstr ""
+msgstr "Ping %s"
 
 #: .\bot.py:685
 msgid "Commit Version %s"
-msgstr ""
+msgstr "コミットバージョン %s"
 
 #: .\bot.py:698
 msgid "This command is on cooldown. Try again in %s seconds."
-msgstr ""
+msgstr "このコマンドはクールダウン中です。%s秒後にもう一度試してください。"
 
