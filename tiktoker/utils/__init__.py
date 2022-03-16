@@ -49,7 +49,6 @@ async def get_music_data(music_id: int = None) -> Optional[dict]:
 
 def get_scales(path: str) -> list:
     """Get scales"""
-    print(path)
     files = [thing for thing in walk(path)][0][2]
     scales = [x.replace(".py", "").replace(" ", "_") for x in files]
     return ["tiktoker.scales.{}".format(x) for x in scales]

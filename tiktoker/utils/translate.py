@@ -9,7 +9,6 @@ from iso639 import languages
 regex = r"Language-Team: (.*)"
 _languages = [dir for dir in walk("./tiktoker/locale")][0][1]
 language_names = {}
-# print(languages.get(alpha2='en').name)
 
 for lang in _languages:
     language_names[lang] = languages.get(alpha2=lang).name
@@ -19,7 +18,7 @@ def load_lang(file: str):
     """Load a language file"""
     for x in _languages:
         cwd = getcwd().replace("\\", "/")  # windows lol
-        print(f"{cwd}/tiktoker/locale/{x}/LC_MESSAGES/{file}.po")
+        print("Loading {} for {}".format(file, x))
         system(
             "python "
             + cwd
