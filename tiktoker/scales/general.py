@@ -15,7 +15,8 @@ from tiktoker.utils import (
 )
 from tiktoker.utils.translate import load_lang, language_names as lang_names
 from dis_snek.ext.paginators import Paginator
-from tiktoker.db.models import UsageData
+from tiktoker.db import init
+from dotenv import get_key
 
 
 _ = load_lang("general")
@@ -26,6 +27,10 @@ class General(dis.Scale):
 
     def __init__(self, bot: dis.Snake):
         self.bot = bot
+
+    @dis.listen(dis.events.Startup)
+    async def startup(self) -> None:
+        await init(host=get_key(".env", "HOST"), username=get_key(".env", "USERNAME"), password=get_key(".env", "PASSWORD"), port=int(get_key(".env", "PORT")))
 
     @dis.slash_command("help", "All the help you need")
     async def help(self, ctx: dis.InteractionContext):

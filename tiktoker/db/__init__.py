@@ -1,6 +1,7 @@
 from beanie import init_beanie
 from motor.motor_asyncio import AsyncIOMotorClient
 from tiktoker.db.models import __beanie_models__
+from tiktoker.db.models.usage_data import UsageData
 
 
 CLIENT = None
