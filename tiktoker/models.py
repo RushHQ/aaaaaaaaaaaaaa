@@ -4,7 +4,9 @@ from typing import Any, Dict, List, Optional
 
 import attr
 from attr import define
-from dis_snek import DictSerializationMixin, Timestamp
+from dis_snek import Timestamp
+from dis_snek.client.mixins.serialization import DictSerializationMixin
+
 from dis_snek.client.utils.converters import timestamp_converter
 
 
