@@ -1,3 +1,3 @@
 files:
-  - source: /locale/tiktoker/en/LC_MESSAGES/bot.po
+  - source: /tiktoker/locale/en/LC_MESSAGES/*.po
     translation: tiktoker/locale/%two_letters_code%/LC_MESSAGES/bot.po
