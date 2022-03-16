@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: tiktoker\n"
+"POT-Creation-Date: 2022-03-16 08:19-0400\n"
+"PO-Revision-Date: 2022-03-16 12:24\n"
+"Last-Translator: \n"
+"Language-Team: Vietnamese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: tiktoker\n"
+"X-Crowdin-Project-ID: 504126\n"
+"X-Crowdin-Language: vi\n"
+"X-Crowdin-File: /master/tiktoker/locale/en/LC_MESSAGES/tiktok.po\n"
+"X-Crowdin-File-ID: 34\n"
+"Language: vi_VN\n"
+
+#: tiktoker/scales/tiktok.py:20
+msgid "There is no TikTok link in that message."
+msgstr ""
+
+#: tiktoker/scales/tiktok.py:54
+#: tiktoker/scales/tiktok.py:103
+#: tiktoker/scales/tiktok.py:153
+msgid "This video may be too long/big for Discord to embed. Just visit the link above."
+msgstr ""
+
+#: tiktoker/scales/tiktok.py:57
+msgid "%s | [Origin](%s) %s"
+msgstr ""
+
+#: tiktoker/scales/tiktok.py:73
+msgid "That doesn't seem to be a valid TikTok link."
+msgstr ""
+
+#: tiktoker/scales/tiktok.py:158
+msgid "%s | From: %s %s"
+msgstr ""
+
+#: tiktoker/scales/tiktok.py:204
+msgid "You don't have the permissions to delete this message."
+msgstr ""
+
+#: tiktoker/scales/tiktok.py:226
+msgid "Views %s"
+msgstr ""
+
+#: tiktoker/scales/tiktok.py:229
+msgid "Likes %s"
+msgstr ""
+
+#: tiktoker/scales/tiktok.py:233
+msgid "Comments %s"
+msgstr ""
+
+#: tiktoker/scales/tiktok.py:236
+msgid "Shares %s"
+msgstr ""
+
+#: tiktoker/scales/tiktok.py:239
+msgid "Downloads %s"
+msgstr ""
+
+#: tiktoker/scales/tiktok.py:242
+msgid "Created"
+msgstr ""
+
+#: tiktoker/scales/tiktok.py:245
+#: tiktoker/scales/tiktok.py:312
+msgid "Download"
+msgstr ""
+
+#: tiktoker/scales/tiktok.py:259
+msgid "Tags %s"
+msgstr ""
+
+#: tiktoker/scales/tiktok.py:266
+msgid "Audio"
+msgstr ""
+
+#: tiktoker/scales/tiktok.py:281
+msgid "It seems this audio is deleted or taken down."
+msgstr ""
+
+#: tiktoker/scales/tiktok.py:297
+msgid "Video Count %s"
+msgstr ""
+
