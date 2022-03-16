@@ -8,7 +8,6 @@ import tiktoker.utils as utils
 tiktoker = dis.Snake(
     intents=dis.Intents.MESSAGES | dis.Intents.DEFAULT,
     sync_interactions=True,
-    debug_scope=780435741650059264,
     delete_unused_application_cmds=False,  # this is a bit buggy on restarts
 )
 
