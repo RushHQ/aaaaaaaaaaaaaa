@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tiktoker\n"
 "POT-Creation-Date: 2022-03-16 08:19-0400\n"
-"PO-Revision-Date: 2022-03-16 12:24\n"
+"PO-Revision-Date: 2022-03-16 13:10\n"
 "Last-Translator: \n"
 "Language-Team: German\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,7 @@ msgstr ""
 
 #:tiktoker/scales/general.py:34
 msgid "Help Menu"
-msgstr ""
+msgstr "Hilfemenü"
 
 #:tiktoker/scales/general.py:35
 msgid "Click the arrow buttons below to navigate the help menu."
@@ -61,7 +61,7 @@ msgstr ""
 
 #:tiktoker/scales/general.py:73
 msgid "Commands"
-msgstr ""
+msgstr "Befehle"
 
 #:tiktoker/scales/general.py:74
 msgid "Here are some commands to interact with the bot."

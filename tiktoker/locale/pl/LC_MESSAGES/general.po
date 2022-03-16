@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tiktoker\n"
 "POT-Creation-Date: 2022-03-16 08:19-0400\n"
-"PO-Revision-Date: 2022-03-16 12:24\n"
+"PO-Revision-Date: 2022-03-16 13:03\n"
 "Last-Translator: \n"
 "Language-Team: Polish\n"
 "MIME-Version: 1.0\n"
@@ -19,41 +19,43 @@ msgstr ""
 
 #:tiktoker/scales/general.py:27
 msgid "What is TikToker?"
-msgstr ""
+msgstr "Czym jest TikToker?"
 
 #:tiktoker/scales/general.py:28
 msgid "Tiktoker is a bot that allows you to send playable TikTok videos to your Discord server."
-msgstr ""
+msgstr "Tiktoker to bot, który pozwala na wysyłanie oglądalnych Tiktoków do twojego serwera Discord."
 
 #:tiktoker/scales/general.py:34
 msgid "Help Menu"
-msgstr ""
+msgstr "Menu Pomocy"
 
 #:tiktoker/scales/general.py:35
 msgid "Click the arrow buttons below to navigate the help menu."
-msgstr ""
+msgstr "Użyj przycisków strzałek poniżej, aby nawigować się po menu pomocy."
 
 #:tiktoker/scales/general.py:42
 msgid "Server Configuration"
-msgstr ""
+msgstr "Konfiguracja Serwera"
 
 #:tiktoker/scales/general.py:43
 msgid "You may view the configuration of your server with `/config`.\n"
 "To edit the config use, `/config <option>`.\n"
 "Example: `/config delete_origin:True`"
-msgstr ""
+msgstr "Możesz zobaczyć konfigurację swojego serwera za pomocą `/config`.\n"
+"Aby ją edytować, użyj `/config <option>`.\n"
+"Przykład: `/config delete_origin:True`"
 
 #:tiktoker/scales/general.py:50
 msgid "If enabled, the bot will automatically embed the Tiktok links."
-msgstr ""
+msgstr "Kiedy włączone, bot będzie automatycznie embedował linki TikTok."
 
 #:tiktoker/scales/general.py:56
 msgid "If enabled and _Auto Embed_ is enabled, the bot will delete the origin message containing the TikTok link."
-msgstr ""
+msgstr "Gdy włączone oraz _Auto Embed_ jest włączone, bot będzie usuwał oryginalną wiadomość zawierającą link do TikToka."
 
 #:tiktoker/scales/general.py:62
 msgid "If enabled, the origin embed will be removed."
-msgstr ""
+msgstr "Gdy włączone, oryginalny embed będzie usuwany."
 
 #:tiktoker/scales/general.py:68
 msgid "Set the language of the bot. "
@@ -61,19 +63,19 @@ msgstr ""
 
 #:tiktoker/scales/general.py:73
 msgid "Commands"
-msgstr ""
+msgstr "Komendy"
 
 #:tiktoker/scales/general.py:74
 msgid "Here are some commands to interact with the bot."
-msgstr ""
+msgstr "Oto kilka poleceń do interakcji z botem."
 
 #:tiktoker/scales/general.py:81
 msgid "To use, right-click a message, go to `Apps > Convert %s`. Useful for when _Auto Embed_ is disabled in your server's configuration."
-msgstr ""
+msgstr "Aby użyć, kliknij prawym na wiadomość, a następnie przejdź do `Aplikacje > Convert %s`. Przydatne, jeśli _Auto Embed_ jest wyłączone w konfiguracji serwera."
 
 #:tiktoker/scales/general.py:88
 msgid "A slash command that takes a TikTok link and returns the video. Useful for when _Auto Embed_ is disabled in your server's configuration."
-msgstr ""
+msgstr "Komenda, która bierze link do TikToka i zwraca wideo. Przydatna, jeśli _Auto Embed_ jest wyłączone w konfiguracji serwera."
 
 #:tiktoker/scales/general.py:94
 msgid "Provides some general information and statistics about TikToker."
@@ -85,29 +87,31 @@ msgstr ""
 
 #:tiktoker/scales/general.py:148
 msgid "Opted-out"
-msgstr ""
+msgstr "Nie wyrażono zgody"
 
 #:tiktoker/scales/general.py:150
 msgid "Opted-in"
-msgstr ""
+msgstr "Wyrażono zgodę"
 
 #:tiktoker/scales/general.py:153
 msgid "You are currently: %s \n\n"
 "**We take your privacy seriously.**\n"
 "Your data is not public. Usage data provides statistics like total videos converted and total users. Please consider sharing your usage data with us to help improve the bot. View the help command for more information on how we handle your privacy."
-msgstr ""
+msgstr "Aktualnie: %s \n\n"
+"**Bierzemy twoją prywatność na poważnie.**\n"
+"Twoje dane nie są upubliczniane. Dane o użytkowaniu umożliwiają statystyki takie jak ilość przekonwertowanych filmów oraz ilość użytkowników. Proszę rozważ udostępnienie nam tych danych, aby pomóc nam w ulepszaniu bota. Zobacz komendę help aby uzyskać więcej informacji o naszym sposobie postępowania z twoimi danymi."
 
 #:tiktoker/scales/general.py:162
 msgid "Thank you for sharing your usage data. It will go towards improving the bot."
-msgstr ""
+msgstr "Dziękujemy za udostępnianie danych o użytkowaniu. Pomoże nam to w ulepszaniu bota."
 
 #:tiktoker/scales/general.py:170
 msgid "You have opted out of usage data collection. Thank you for your time."
-msgstr ""
+msgstr "Zrezygnowano ze zbierania danych o użytkowaniu. Dziękujemy za poświęcony czas."
 
 #:tiktoker/scales/general.py:178
 msgid "Your usage data for this server has been deleted."
-msgstr ""
+msgstr "Twoje dane o użytkowaniu dla tego serwera zostały usunięte."
 
 #:tiktoker/scales/general.py:226
 msgid "You do not have permission to use this command. Reason: `Missing Manage Server Permission`"
@@ -116,12 +120,12 @@ msgstr ""
 #:tiktoker/scales/general.py:241
 #:tiktoker/scales/general.py:272
 msgid "Current Config"
-msgstr ""
+msgstr "Bieżąca Konfiguracja"
 
 #:tiktoker/scales/general.py:242
 #:tiktoker/scales/general.py:273
 msgid "To change a setting, use `/config <setting> <value>`."
-msgstr ""
+msgstr "Aby zmienić opcję, użyj `/config <setting> <value>`."
 
 #:tiktoker/scales/general.py:327
 msgid "TikToker Info"

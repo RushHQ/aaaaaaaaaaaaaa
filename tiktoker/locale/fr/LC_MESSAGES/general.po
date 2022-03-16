@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tiktoker\n"
 "POT-Creation-Date: 2022-03-16 08:19-0400\n"
-"PO-Revision-Date: 2022-03-16 12:24\n"
+"PO-Revision-Date: 2022-03-16 13:10\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -19,33 +19,35 @@ msgstr ""
 
 #:tiktoker/scales/general.py:27
 msgid "What is TikToker?"
-msgstr ""
+msgstr "Qu'est-ce que TikToker ?"
 
 #:tiktoker/scales/general.py:28
 msgid "Tiktoker is a bot that allows you to send playable TikTok videos to your Discord server."
-msgstr ""
+msgstr "Tiktoker est un bot qui vous permet d'envoyer des vidéos TikTok dans votre serveur Discord."
 
 #:tiktoker/scales/general.py:34
 msgid "Help Menu"
-msgstr ""
+msgstr "Menu d’aide"
 
 #:tiktoker/scales/general.py:35
 msgid "Click the arrow buttons below to navigate the help menu."
-msgstr ""
+msgstr "Cliquez sur les flèches ci-dessous pour naviguer dans le menu d'aide."
 
 #:tiktoker/scales/general.py:42
 msgid "Server Configuration"
-msgstr ""
+msgstr "Configuration du serveur"
 
 #:tiktoker/scales/general.py:43
 msgid "You may view the configuration of your server with `/config`.\n"
 "To edit the config use, `/config <option>`.\n"
 "Example: `/config delete_origin:True`"
-msgstr ""
+msgstr "Vous pouvez voir la configuration de votre serveur avec `/config`.\n"
+"Pour modifier la configuration, utilisez `/config <option>`.\n"
+"Exemple: `/config delete_origin:True`"
 
 #:tiktoker/scales/general.py:50
 msgid "If enabled, the bot will automatically embed the Tiktok links."
-msgstr ""
+msgstr "S'i activé, le bot intégrera automatiquement les liens Tiktok."
 
 #:tiktoker/scales/general.py:56
 msgid "If enabled and _Auto Embed_ is enabled, the bot will delete the origin message containing the TikTok link."

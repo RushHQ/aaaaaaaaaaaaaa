@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tiktoker\n"
 "POT-Creation-Date: 2022-03-16 08:19-0400\n"
-"PO-Revision-Date: 2022-03-16 12:24\n"
+"PO-Revision-Date: 2022-03-16 13:03\n"
 "Last-Translator: \n"
 "Language-Team: Polish\n"
 "MIME-Version: 1.0\n"
@@ -19,72 +19,72 @@ msgstr ""
 
 #: tiktoker/scales/tiktok.py:20
 msgid "There is no TikTok link in that message."
-msgstr ""
+msgstr "Brak linku TikTok w tej wiadomości."
 
 #: tiktoker/scales/tiktok.py:54
 #: tiktoker/scales/tiktok.py:103
 #: tiktoker/scales/tiktok.py:153
 msgid "This video may be too long/big for Discord to embed. Just visit the link above."
-msgstr ""
+msgstr "To wideo może być za długie/duże, aby umieścić je w embedzie. Po prostu odwiedź link powyżej."
 
 #: tiktoker/scales/tiktok.py:57
 msgid "%s | [Origin](%s) %s"
-msgstr ""
+msgstr "%s | [Oryginalną](%s) %s"
 
 #: tiktoker/scales/tiktok.py:73
 msgid "That doesn't seem to be a valid TikTok link."
-msgstr ""
+msgstr "To nie wygląda na poprawny link TikTok."
 
 #: tiktoker/scales/tiktok.py:158
 msgid "%s | From: %s %s"
-msgstr ""
+msgstr "%s | Od: %s %s"
 
 #: tiktoker/scales/tiktok.py:204
 msgid "You don't have the permissions to delete this message."
-msgstr ""
+msgstr "Nie masz permisji na usunięcie tej wiadomości."
 
 #: tiktoker/scales/tiktok.py:226
 msgid "Views %s"
-msgstr ""
+msgstr "Wyświetlenia %s"
 
 #: tiktoker/scales/tiktok.py:229
 msgid "Likes %s"
-msgstr ""
+msgstr "Polubienia %s"
 
 #: tiktoker/scales/tiktok.py:233
 msgid "Comments %s"
-msgstr ""
+msgstr "Komentarze %s"
 
 #: tiktoker/scales/tiktok.py:236
 msgid "Shares %s"
-msgstr ""
+msgstr "Udostępnienia %s"
 
 #: tiktoker/scales/tiktok.py:239
 msgid "Downloads %s"
-msgstr ""
+msgstr "Pobrania %s"
 
 #: tiktoker/scales/tiktok.py:242
 msgid "Created"
-msgstr ""
+msgstr "Utworzono"
 
 #: tiktoker/scales/tiktok.py:245
 #: tiktoker/scales/tiktok.py:312
 msgid "Download"
-msgstr ""
+msgstr "Pobierz"
 
 #: tiktoker/scales/tiktok.py:259
 msgid "Tags %s"
-msgstr ""
+msgstr "Tagi %s"
 
 #: tiktoker/scales/tiktok.py:266
 msgid "Audio"
-msgstr ""
+msgstr "Audio"
 
 #: tiktoker/scales/tiktok.py:281
 msgid "It seems this audio is deleted or taken down."
-msgstr ""
+msgstr "Wygląda na to, że to audio zostało usunięte."
 
 #: tiktoker/scales/tiktok.py:297
 msgid "Video Count %s"
-msgstr ""
+msgstr "Ilość filmów %s"
 

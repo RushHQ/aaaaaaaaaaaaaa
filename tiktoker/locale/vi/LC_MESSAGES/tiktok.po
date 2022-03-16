@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tiktoker\n"
 "POT-Creation-Date: 2022-03-16 08:19-0400\n"
-"PO-Revision-Date: 2022-03-16 12:24\n"
+"PO-Revision-Date: 2022-03-16 13:10\n"
 "Last-Translator: \n"
 "Language-Team: Vietnamese\n"
 "MIME-Version: 1.0\n"
@@ -19,72 +19,72 @@ msgstr ""
 
 #: tiktoker/scales/tiktok.py:20
 msgid "There is no TikTok link in that message."
-msgstr ""
+msgstr "Không có đường liên kết TikTok nào trong tin nhắn."
 
 #: tiktoker/scales/tiktok.py:54
 #: tiktoker/scales/tiktok.py:103
 #: tiktoker/scales/tiktok.py:153
 msgid "This video may be too long/big for Discord to embed. Just visit the link above."
-msgstr ""
+msgstr "Video này quá dài hoặc quá lớn để đính vào. Hãy vào link bên trên."
 
 #: tiktoker/scales/tiktok.py:57
 msgid "%s | [Origin](%s) %s"
-msgstr ""
+msgstr "%s | [Gốc](%s) %s"
 
 #: tiktoker/scales/tiktok.py:73
 msgid "That doesn't seem to be a valid TikTok link."
-msgstr ""
+msgstr "Có vẻ như đường liên kết TikTok đó không có hiệu lực."
 
 #: tiktoker/scales/tiktok.py:158
 msgid "%s | From: %s %s"
-msgstr ""
+msgstr "%s | Từ: %s %s"
 
 #: tiktoker/scales/tiktok.py:204
 msgid "You don't have the permissions to delete this message."
-msgstr ""
+msgstr "Bạn không có quyền xóa tin nhắn này."
 
 #: tiktoker/scales/tiktok.py:226
 msgid "Views %s"
-msgstr ""
+msgstr "Lượt xem %s"
 
 #: tiktoker/scales/tiktok.py:229
 msgid "Likes %s"
-msgstr ""
+msgstr "Thích %s"
 
 #: tiktoker/scales/tiktok.py:233
 msgid "Comments %s"
-msgstr ""
+msgstr "Bình luận %s"
 
 #: tiktoker/scales/tiktok.py:236
 msgid "Shares %s"
-msgstr ""
+msgstr "Chia sẻ %s"
 
 #: tiktoker/scales/tiktok.py:239
 msgid "Downloads %s"
-msgstr ""
+msgstr "Tải xuống %s"
 
 #: tiktoker/scales/tiktok.py:242
 msgid "Created"
-msgstr ""
+msgstr "Đã được tạo"
 
 #: tiktoker/scales/tiktok.py:245
 #: tiktoker/scales/tiktok.py:312
 msgid "Download"
-msgstr ""
+msgstr "Tải xuống"
 
 #: tiktoker/scales/tiktok.py:259
 msgid "Tags %s"
-msgstr ""
+msgstr "Các thẻ %s"
 
 #: tiktoker/scales/tiktok.py:266
 msgid "Audio"
-msgstr ""
+msgstr "Âm thanh"
 
 #: tiktoker/scales/tiktok.py:281
 msgid "It seems this audio is deleted or taken down."
-msgstr ""
+msgstr "Có vẻ như âm thanh này đã bị xóa hoặc bị gỡ xuống."
 
 #: tiktoker/scales/tiktok.py:297
 msgid "Video Count %s"
-msgstr ""
+msgstr "Số lượng video %s"
 
