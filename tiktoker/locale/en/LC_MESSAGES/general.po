@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-14 23:00-0400\n"
+"POT-Creation-Date: 2022-03-16 08:19-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,82 +15,82 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: .\bot.py:46
+#:tiktoker/scales/general.py:27
 msgid "What is TikToker?"
 msgstr ""
 
-#: .\bot.py:47
+#:tiktoker/scales/general.py:28
 msgid "Tiktoker is a bot that allows you to send playable TikTok videos to your Discord server."
 msgstr ""
 
-#: .\bot.py:53
+#:tiktoker/scales/general.py:34
 msgid "Help Menu"
 msgstr ""
 
-#: .\bot.py:54
+#:tiktoker/scales/general.py:35
 msgid "Click the arrow buttons below to navigate the help menu."
 msgstr ""
 
-#: .\bot.py:61
+#:tiktoker/scales/general.py:42
 msgid "Server Configuration"
 msgstr ""
 
-#: .\bot.py:62
+#:tiktoker/scales/general.py:43
 msgid ""
 "You may view the configuration of your server with `/config`.\n"
 "To edit the config use, `/config <option>`.\n"
 "Example: `/config delete_origin:True`"
 msgstr ""
 
-#: .\bot.py:69
+#:tiktoker/scales/general.py:50
 msgid "If enabled, the bot will automatically embed the Tiktok links."
 msgstr ""
 
-#: .\bot.py:75
+#:tiktoker/scales/general.py:56
 msgid "If enabled and _Auto Embed_ is enabled, the bot will delete the origin message containing the TikTok link."
 msgstr ""
 
-#: .\bot.py:81
+#:tiktoker/scales/general.py:62
 msgid "If enabled, the origin embed will be removed."
 msgstr ""
 
-#: .\bot.py:87
-msgid "Set the language of the bot."
+#:tiktoker/scales/general.py:68
+msgid "Set the language of the bot. "
 msgstr ""
 
-#: .\bot.py:92
+#:tiktoker/scales/general.py:73
 msgid "Commands"
 msgstr ""
 
-#: .\bot.py:93
+#:tiktoker/scales/general.py:74
 msgid "Here are some commands to interact with the bot."
 msgstr ""
 
-#: .\bot.py:100
+#:tiktoker/scales/general.py:81
 msgid "To use, right-click a message, go to `Apps > Convert %s`. Useful for when _Auto Embed_ is disabled in your server's configuration."
 msgstr ""
 
-#: .\bot.py:107
+#:tiktoker/scales/general.py:88
 msgid "A slash command that takes a TikTok link and returns the video. Useful for when _Auto Embed_ is disabled in your server's configuration."
 msgstr ""
 
-#: .\bot.py:113
+#:tiktoker/scales/general.py:94
 msgid "Provides some general information and statistics about TikToker."
 msgstr ""
 
-#: .\bot.py:128
+#:tiktoker/scales/general.py:109
 msgid "This menu is not for you"
 msgstr ""
 
-#: .\bot.py:168
+#:tiktoker/scales/general.py:148
 msgid "Opted-out"
 msgstr ""
 
-#: .\bot.py:170
+#:tiktoker/scales/general.py:150
 msgid "Opted-in"
 msgstr ""
 
-#: .\bot.py:173
+#:tiktoker/scales/general.py:153
 msgid ""
 "You are currently: %s \n"
 "\n"
@@ -98,131 +98,69 @@ msgid ""
 "Your data is not public. Usage data provides statistics like total videos converted and total users. Please consider sharing your usage data with us to help improve the bot. View the help command for more information on how we handle your privacy."
 msgstr ""
 
-#: .\bot.py:182
+#:tiktoker/scales/general.py:162
 msgid "Thank you for sharing your usage data. It will go towards improving the bot."
 msgstr ""
 
-#: .\bot.py:190
+#:tiktoker/scales/general.py:170
 msgid "You have opted out of usage data collection. Thank you for your time."
 msgstr ""
 
-#: .\bot.py:198
+#:tiktoker/scales/general.py:178
 msgid "Your usage data for this server has been deleted."
 msgstr ""
 
-#: .\bot.py:260 .\bot.py:290
+#:tiktoker/scales/general.py:226
+msgid "You do not have permission to use this command. Reason: `Missing Manage Server Permission`"
+msgstr ""
+
+#:tiktoker/scales/general.py:241
+#:tiktoker/scales/general.py:272
 msgid "Current Config"
 msgstr ""
 
-#: .\bot.py:261 .\bot.py:291
+#:tiktoker/scales/general.py:242
+#:tiktoker/scales/general.py:273
 msgid "To change a setting, use `/config <setting> <value>`."
 msgstr ""
 
-#: .\bot.py:313
-msgid "There is no TikTok link in that message."
-msgstr ""
-
-#: .\bot.py:347 .\bot.py:396 .\bot.py:446
-msgid "This video may be too long/big for Discord to embed. Just visit the link above."
-msgstr ""
-
-#: .\bot.py:350
-msgid "%s | [Origin](%s) %s"
-msgstr ""
-
-#: .\bot.py:366
-msgid "That doesn't seem to be a valid TikTok link."
-msgstr ""
-
-#: .\bot.py:451
-msgid "%s | From: %s %s"
-msgstr ""
-
-#: .\bot.py:497
-msgid "You don't have the permissions to delete this message."
-msgstr ""
-
-#: .\bot.py:519
-msgid "Views %s"
-msgstr ""
-
-#: .\bot.py:522
-msgid "Likes %s"
-msgstr ""
-
-#: .\bot.py:526
-msgid "Comments %s"
-msgstr ""
-
-#: .\bot.py:529
-msgid "Shares %s"
-msgstr ""
-
-#: .\bot.py:532
-msgid "Downloads %s"
-msgstr ""
-
-#: .\bot.py:535
-msgid "Created"
-msgstr ""
-
-#: .\bot.py:538 .\bot.py:605
-msgid "Download"
-msgstr ""
-
-#: .\bot.py:552
-msgid "Tags %s"
-msgstr ""
-
-#: .\bot.py:559
-msgid "Audio"
-msgstr ""
-
-#: .\bot.py:574
-msgid "It seems this audio is deleted or taken down."
-msgstr ""
-
-#: .\bot.py:590
-msgid "Video Count %s"
-msgstr ""
-
-#: .\bot.py:648
+#:tiktoker/scales/general.py:327
 msgid "TikToker Info"
 msgstr ""
 
-#: .\bot.py:649
+#:tiktoker/scales/general.py:328
 msgid "Here is some general information and statistics about TikToker."
 msgstr ""
 
-#: .\bot.py:655
+#:tiktoker/scales/general.py:334
 msgid "TikToks Converted %s"
 msgstr ""
 
-#: .\bot.py:660
+#:tiktoker/scales/general.py:339
 msgid "Converted Today %s"
 msgstr ""
 
-#: .\bot.py:665
+#:tiktoker/scales/general.py:344
 msgid "Most Popular TikTok %s"
 msgstr ""
 
-#: .\bot.py:670
+#:tiktoker/scales/general.py:349
 msgid "Server Count %s"
 msgstr ""
 
-#: .\bot.py:675
+#:tiktoker/scales/general.py:354
 msgid "User Count %s"
 msgstr ""
 
-#: .\bot.py:680
+#:tiktoker/scales/general.py:359
 msgid "Ping %s"
 msgstr ""
 
-#: .\bot.py:685
+#:tiktoker/scales/general.py:364
 msgid "Commit Version %s"
 msgstr ""
 
-#: .\bot.py:698
+#:tiktoker/scales/general.py:377
 msgid "This command is on cooldown. Try again in %s seconds."
 msgstr ""
 
