@@ -13,5 +13,5 @@ async def init(host: str, username: str, password: str, port: int) -> None:
     CLIENT = AsyncIOMotorClient(
         host=host, port=port, username=username, password=password
     )
-    TIKTOKERDB = CLIENT.tiktoker_dev
+    TIKTOKERDB = CLIENT.tiktoker
     await init_beanie(database=TIKTOKERDB, document_models=__beanie_models__)
