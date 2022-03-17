@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tiktoker\n"
 "POT-Creation-Date: 2022-03-17 13:33-0400\n"
-"PO-Revision-Date: 2022-03-17 18:06\n"
+"PO-Revision-Date: 2022-03-17 18:18\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -19,9 +19,9 @@ msgstr ""
 
 #: C:/Users/aiden/Programs/TikToker/tiktoker/scales/douyin.py:65
 msgid "This video may be too long/big for Discord to embed. Just visit the link above."
-msgstr ""
+msgstr "このビデオはDiscordに埋め込むには長すぎる／大きすぎる可能性があります。上記のリンクをご覧ください。"
 
 #: C:/Users/aiden/Programs/TikToker/tiktoker/scales/douyin.py:70
 msgid "%s | From: %s %s"
-msgstr ""
+msgstr "%s | 送信者: %s %s"
 
