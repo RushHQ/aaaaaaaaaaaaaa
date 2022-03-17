@@ -19,6 +19,7 @@ class LinkData:
     type: int = attr.ib()
     id: int = attr.ib()
     url: str = attr.ib()
+    douyin: bool = attr.ib(default=False)
 
     @classmethod
     def from_list(cls, link: List[int | str | str]) -> "LinkData":
@@ -31,7 +32,7 @@ class LinkData:
         returns:
             A LinkData object.
         """
-        if len(link) != 3:
+        if len(link) != 3 and len(link) != 4:
             raise ValueError("Invalid link")
         return cls(*link)
 
@@ -41,6 +42,8 @@ class VideoIdType(Enum):
     SHORT = 1  # https://vm.tiktok.com/PTPdh1wVay/
     MEDIUM = 2  # https://m.tiktok.com/v/7068971038273423621.html
     FYP = 3  # https://www.tiktok.com/foryou?_r=1&is_from_webapp=v1&item_id=7068971038273423621&source=h5_m#/@yakmofo123/video/7068971038273423621
+    DOUYIN_LONG = 4  # https://www.douyin.com/video/7068971038273423621
+    DOUYIN_SHORT = 5  # https://www.douyin.com/share/video/7068971038273423621
 
 
 @attr.s()

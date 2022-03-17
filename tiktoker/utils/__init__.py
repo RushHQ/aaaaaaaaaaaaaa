@@ -183,6 +183,15 @@ def check_for_link(content: str) -> Optional["LinkData"]:
         medium_match = re.search(
             r"(?P<http>http:|https:\/\/)?m\.tiktok\.com\/v\/(?P<id>\d{15,30})", content
         )
+        douyin_long_match = re.search(
+            r"(?P<http>http:|https:\/\/)?(www\.)?douyin\.com\/video\/(?P<id>\d{15,30})",
+            content,
+        )
+        douyin_short_match = re.search(
+            r"(?P<http>http:|https:\/\/)?((?!ww)\w{1,2})\.douyin.com\/(?P<short_id>\w{5,15})",
+            content,
+        )
+
     except TypeError as e:
         print(f"{content} is not a string")
         print(type(content))
@@ -234,10 +243,46 @@ def check_for_link(content: str) -> Optional["LinkData"]:
         return LinkData.from_list(
             [VideoIdType.FYP, fyp_match.group("item_id"), fyp_match.group(0)]
         )
+    if douyin_long_match:
+        if not douyin_long_match.group("http"):
+            return LinkData.from_list(
+                [
+                    VideoIdType.DOUYIN_LONG,
+                    douyin_long_match.group("id"),
+                    f"https://{douyin_long_match.group(0)}",
+                    True,
+                ]
+            )
+        return LinkData.from_list(
+            [
+                VideoIdType.DOUYIN_LONG,
+                douyin_long_match.group("id"),
+                douyin_long_match.group(0),
+                True,
+            ]
+        )
+    if douyin_short_match:
+        if not douyin_short_match.group("http"):
+            return LinkData.from_list(
+                [
+                    VideoIdType.DOUYIN_SHORT,
+                    douyin_short_match.group("short_id"),
+                    f"https://{douyin_short_match.group(0)}",
+                    True,
+                ]
+            )
+        return LinkData.from_list(
+            [
+                VideoIdType.DOUYIN_SHORT,
+                douyin_short_match.group("short_id"),
+                douyin_short_match.group(0),
+                True,
+            ]
+        )
     return None
 
 
-async def create_short_url(video_uri: str) -> str:
+async def create_short_url(video_uri: str, douyin: bool = False) -> str:
     """
     Shortens a url if not in cache.
 
@@ -261,6 +306,7 @@ async def create_short_url(video_uri: str) -> str:
         video_uri=video_uri,
         slug=slug,
         shortened_url=f"https://m.tiktoker.win/{slug}",
+        douyin=douyin,
     )
     try:
         await shortener.save()

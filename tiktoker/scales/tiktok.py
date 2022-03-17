@@ -23,7 +23,7 @@ class TikTok(dis.Scale):
         await ctx.defer()
         config = await get_guild_config(ctx.guild.id)
         link = check_for_link(ctx.target.content)
-        if not link:
+        if not link or link.douyin:
             await ctx.send(
                 _[config.language].gettext("There is no TikTok link in that message."),
                 ephemeral=True,
@@ -77,7 +77,7 @@ class TikTok(dis.Scale):
     async def slash_tiktok(self, ctx: dis.InteractionContext, link: str):
         config = await get_guild_config(ctx.guild.id)
         link = check_for_link(link)
-        if not link:
+        if not link or link.douyin:
             await ctx.send(
                 _[config.language].gettext(
                     "That doesn't seem to be a valid TikTok link."
@@ -124,7 +124,7 @@ class TikTok(dis.Scale):
             return
         content = event.message.content
         link = check_for_link(content)
-        if not link:
+        if not link or link.douyin:
             return
 
         config = await get_guild_config(event.message.guild.id)
