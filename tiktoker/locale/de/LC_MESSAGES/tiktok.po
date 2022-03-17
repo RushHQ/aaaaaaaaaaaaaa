@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tiktoker\n"
-"POT-Creation-Date: 2022-03-16 08:19-0400\n"
-"PO-Revision-Date: 2022-03-16 12:24\n"
+"POT-Creation-Date: 2022-03-17 13:33-0400\n"
+"PO-Revision-Date: 2022-03-17 18:01\n"
 "Last-Translator: \n"
 "Language-Team: German\n"
 "MIME-Version: 1.0\n"
@@ -17,74 +17,74 @@ msgstr ""
 "X-Crowdin-File-ID: 34\n"
 "Language: de_DE\n"
 
-#: tiktoker/scales/tiktok.py:20
+#: C:/Users/aiden/Programs/TikToker/tiktoker/scales/tiktok.py:28
 msgid "There is no TikTok link in that message."
 msgstr ""
 
-#: tiktoker/scales/tiktok.py:54
-#: tiktoker/scales/tiktok.py:103
-#: tiktoker/scales/tiktok.py:153
+#: C:/Users/aiden/Programs/TikToker/tiktoker/scales/tiktok.py:62
+#: C:/Users/aiden/Programs/TikToker/tiktoker/scales/tiktok.py:114
+#: C:/Users/aiden/Programs/TikToker/tiktoker/scales/tiktok.py:163
 msgid "This video may be too long/big for Discord to embed. Just visit the link above."
 msgstr ""
 
-#: tiktoker/scales/tiktok.py:57
+#: C:/Users/aiden/Programs/TikToker/tiktoker/scales/tiktok.py:65
 msgid "%s | [Origin](%s) %s"
 msgstr ""
 
-#: tiktoker/scales/tiktok.py:73
+#: C:/Users/aiden/Programs/TikToker/tiktoker/scales/tiktok.py:82
 msgid "That doesn't seem to be a valid TikTok link."
 msgstr ""
 
-#: tiktoker/scales/tiktok.py:158
+#: C:/Users/aiden/Programs/TikToker/tiktoker/scales/tiktok.py:168
 msgid "%s | From: %s %s"
 msgstr ""
 
-#: tiktoker/scales/tiktok.py:204
+#: C:/Users/aiden/Programs/TikToker/tiktoker/scales/tiktok.py:213
 msgid "You don't have the permissions to delete this message."
 msgstr ""
 
-#: tiktoker/scales/tiktok.py:226
+#: C:/Users/aiden/Programs/TikToker/tiktoker/scales/tiktok.py:237
 msgid "Views %s"
 msgstr ""
 
-#: tiktoker/scales/tiktok.py:229
+#: C:/Users/aiden/Programs/TikToker/tiktoker/scales/tiktok.py:240
 msgid "Likes %s"
 msgstr ""
 
-#: tiktoker/scales/tiktok.py:233
+#: C:/Users/aiden/Programs/TikToker/tiktoker/scales/tiktok.py:244
 msgid "Comments %s"
 msgstr ""
 
-#: tiktoker/scales/tiktok.py:236
+#: C:/Users/aiden/Programs/TikToker/tiktoker/scales/tiktok.py:249
 msgid "Shares %s"
 msgstr ""
 
-#: tiktoker/scales/tiktok.py:239
+#: C:/Users/aiden/Programs/TikToker/tiktoker/scales/tiktok.py:252
 msgid "Downloads %s"
 msgstr ""
 
-#: tiktoker/scales/tiktok.py:242
+#: C:/Users/aiden/Programs/TikToker/tiktoker/scales/tiktok.py:257
 msgid "Created"
 msgstr ""
 
-#: tiktoker/scales/tiktok.py:245
-#: tiktoker/scales/tiktok.py:312
+#: C:/Users/aiden/Programs/TikToker/tiktoker/scales/tiktok.py:260
+#: C:/Users/aiden/Programs/TikToker/tiktoker/scales/tiktok.py:329
 msgid "Download"
 msgstr ""
 
-#: tiktoker/scales/tiktok.py:259
+#: C:/Users/aiden/Programs/TikToker/tiktoker/scales/tiktok.py:274
 msgid "Tags %s"
 msgstr ""
 
-#: tiktoker/scales/tiktok.py:266
+#: C:/Users/aiden/Programs/TikToker/tiktoker/scales/tiktok.py:281
 msgid "Audio"
 msgstr ""
 
-#: tiktoker/scales/tiktok.py:281
+#: C:/Users/aiden/Programs/TikToker/tiktoker/scales/tiktok.py:296
 msgid "It seems this audio is deleted or taken down."
 msgstr ""
 
-#: tiktoker/scales/tiktok.py:297
+#: C:/Users/aiden/Programs/TikToker/tiktoker/scales/tiktok.py:312
 msgid "Video Count %s"
 msgstr ""
 
